@@ -3,8 +3,11 @@ import mediapipe as mp
 import serial
 import socket
 
-#ser = serial.Serial("/dev/ttyUSB0", 115200, timeout=1)
+serverIP = input("Enter the server IP>>> ")
 
+#ser = serial.Serial("/dev/ttyUSB0", 115200, timeout=1)
+socket_laptop = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+socket_laptop.connect((f'{serverIP}', 8080))
 cap = cv2.VideoCapture(0)
 hand_mp = mp.solutions.hands
 draw_mp = mp.solutions.drawing_utils
