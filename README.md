@@ -18,4 +18,4 @@ The setup is not perfect and may experience occasional delays or minor bugs.
 - Updates on the page are not in SYNC across all devices.
 - Not Fixed Yet.
 
-*Please don't bully the code. It's trying its best.*
+*Held together by hopes and dreams btw.*
