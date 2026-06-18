@@ -21,7 +21,7 @@ with hand_mp.Hands(static_image_mode = False, max_num_hands = 1, min_detection_c
         if result_2.multi_hand_landmarks:
             for hand_landmark in result_2.multi_hand_landmarks:
                 draw_mp.draw_landmarks(frame, hand_landmark, hand_mp.HAND_CONNECTIONS)
-# Middle And Thumb Finger touching
+#Middle And Thumb Finger touching
                 ls1 = result_2.multi_hand_landmarks[0].landmark[12]
                 ls2 = result_2.multi_hand_landmarks[0].landmark[4]
                 x1 = ls1.x
@@ -52,3 +52,6 @@ with hand_mp.Hands(static_image_mode = False, max_num_hands = 1, min_detection_c
 cap.release()
 cv2.destroyAllWindows()
 socket_laptop.close()
+
+
+#Rhuthu is a dwarf ass nigga XDDDD
